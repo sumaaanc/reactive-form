@@ -22,7 +22,7 @@ export class AppComponent{
     email: ['', Validators.required],
     dateOfBirth:['', Validators.required],
     permanentAddress: this.fb.group({
-      provience:['', Validators.required],
+      province:['', Validators.required],
       district:['', Validators.required],
       municipality:['', Validators.required],
       villageName:['', Validators.required],

@@ -1,1 +1,86 @@
 <h1>Personal details</h1>
+<form [formGroup]="formDetails">
+  <!-- Name Section -->
+  <div class="form-section" formGroupName="name">
+    <label>First Name:</label>
+    <input type="text" formControlName="firstName" >
+
+    <label>Middle Name:</label>
+    <input type="text" formControlName="middleName" >
+
+    <label>Last Name:</label>
+    <input type="text" formControlName="lastName" >
+  </div>
+
+  <!-- Phone Number -->
+  <div class="form-section">
+    <label>Phone Number:</label>
+    <input type="text" formControlName="phoneNo" >
+  </div>
+
+  <!-- Email -->
+  <div class="form-section">
+    <label>Email:</label>
+    <input type="email" formControlName="email" >
+  </div>
+
+  <!-- Date of Birth -->
+  <div class="form-section">
+    <label>Date of Birth:</label>
+    <input type="date" formControlName="dateOfBirth" >
+  </div>
+
+  <!-- Permanent Address -->
+  <div class="form-section" formGroupName="permanentAddress">
+    <label>Province:</label>
+    <select formControlName="province" >
+      <option value="" disabled selected>Select Province</option>
+      <option value="province1">Province 1</option>
+      <option value="province2">Province 2</option>
+      <!-- Add more options as needed -->
+    </select>
+
+    <label>District:</label>
+    <select formControlName="district" >
+      <option value="" disabled selected>Select District</option>
+      <option value="district1">District 1</option>
+      <option value="district2">District 2</option>
+      <!-- Add more options as needed -->
+    </select>
+
+    <label>Municipality:</label>
+    <select formControlName="municipality" >
+      <option value="" disabled selected>Select Municipality</option>
+      <option value="municipality1">Municipality 1</option>
+      <option value="municipality2">Municipality 2</option>
+      <!-- Add more options as needed -->
+    </select>
+  </div>
+
+  <!-- Educational Qualification -->
+  <div class="form-section">
+    <label>Educational Qualification:</label>
+    <input type="text" formControlName="eduQulification" >
+  </div>
+
+  <!-- Family Details -->
+  <div class="form-section" formGroupName="familyDetails">
+    <label>Grandfather Name:</label>
+    <input type="text" formControlName="grandFatherName" >
+
+    <label>Father Name:</label>
+    <input type="text" formControlName="fatherName" >
+
+    <label>Mother Name:</label>
+    <input type="text" formControlName="motherName" >
+  </div>
+
+  <!-- Photo -->
+  <div class="form-section">
+    <label>Photo:</label>
+    <input type="file" formControlName="photo" >
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit">Submit</button>
+</form>
