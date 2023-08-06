@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins&family=REM:ital,wght@0,100;1,400;1,500&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Concert One', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     display: flex;
